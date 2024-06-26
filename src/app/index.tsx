@@ -23,10 +23,10 @@ function Content() {
               role="heading"
               className="text-3xl text-center native:text-5xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl"
             >
-              Welcome to Project ACME
+              Hoşgeldin
             </Text>
             <Text className="mx-auto max-w-[700px] text-lg text-center text-gray-500 md:text-xl dark:text-gray-400">
-              Discover and collaborate on amce. Explore our services now.
+              Uygulamamıza hoş geldiniz.
             </Text>
 
             <View className="gap-4">
@@ -51,26 +51,26 @@ function Header() {
     <View style={{ paddingTop: top }}>
       <View className="px-4 lg:px-6 h-14 flex items-center flex-row justify-between ">
         <Link className="font-bold flex-1 items-center justify-center" href="/">
-          ACME
+          Yummy App
         </Link>
         <View className="flex flex-row gap-4 sm:gap-6">
           <Link
             className="text-md font-medium hover:underline web:underline-offset-4"
             href="/"
           >
-            About
+            Hakkımızda
           </Link>
           <Link
             className="text-md font-medium hover:underline web:underline-offset-4"
             href="/"
           >
-            Product
+            Paylaşım
           </Link>
           <Link
             className="text-md font-medium hover:underline web:underline-offset-4"
             href="/"
           >
-            Pricing
+            İletişim
           </Link>
         </View>
       </View>
