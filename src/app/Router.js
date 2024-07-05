@@ -9,8 +9,8 @@ const Stack = createNativeStackNavigator();
 function Router() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: true }}>
-      <Stack.Screen name="Yummy Application" component={LoginScreen} />
       <Stack.Screen name="anasayfa" component={HomeScreen} />
+      <Stack.Screen name="login" component={LoginScreen} />
       <Stack.Screen name="register" component={RegisterScreen} />
     </Stack.Navigator>
   );
