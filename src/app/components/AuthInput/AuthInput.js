@@ -9,6 +9,7 @@ const AuthForm = ({ fields, values, onChange }) => {
         <TextInput
           key={field.name}
           style={styles.input}
+          placeholderTextColor="#999"
           placeholder={field.placeholder}
           value={values[field.name]}
           onChangeText={(text) => onChange(field.name, text)}
