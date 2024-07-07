@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   },
   link: {
     color: "#61dafb",
-    fontSize: 16,
+    fontSize: 14,
     margin: 10,
   },
   copyright: {
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     //  fontSize: 16,
     //  margin: 10
     color: "#aaa", // Daha açık bir gri tonu
-    fontSize: 14,
+    fontSize: 12,
     marginTop: 20,
     textAlign: "center",
     width: "100%",
