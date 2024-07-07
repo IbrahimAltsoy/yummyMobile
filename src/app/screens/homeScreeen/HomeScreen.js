@@ -97,14 +97,18 @@ function HomeScreen({ navigate }) {
   //   </View>
   // );
   return (
-    <LinearGradient colors={["#ff9966", "#ff5e62"]} style={styles.container}>
+    <LinearGradient colors={["#F8F8FF", "#F8F8FF"]} style={styles.container}>
       <View style={styles.logoContainer}>
+        <Text style={styles.appName}>YUMMY</Text>
+        <Text style={styles.appName}>APPLICATION</Text>
+
         <Image
           source={require("../../assets/images/logo.jpg")}
           style={styles.logo}
         />
-        <Text style={styles.appName}>Yummy Application</Text>
-        <Text style={styles.tagline}>Delicious recipes at your fingertips</Text>
+
+        <Text style={styles.tag}>Experience</Text>
+        <Text style={styles.tagline}>me first</Text>
       </View>
       <View style={styles.buttonContainer}>
         <TouchableOpacity

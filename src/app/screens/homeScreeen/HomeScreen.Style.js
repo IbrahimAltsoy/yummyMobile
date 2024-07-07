@@ -1,59 +1,71 @@
 import { StyleSheet } from "react-native";
 
-const styles = StyleSheet.create({
+export default StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    paddingHorizontal: 20,
+    paddingVertical: 40,
   },
   logoContainer: {
     alignItems: "center",
-    marginBottom: 50,
+    marginBottom: 40,
   },
   logo: {
-    width: 100,
-    height: 100,
+    width: 150,
+    height: 150,
     marginBottom: 20,
+    borderRadius: 75,
   },
   appName: {
-    fontSize: 24,
+    fontSize: 36,
     fontWeight: "bold",
-    color: "#fff",
+    color: "#B22222",
+    textAlign: "center",
+    marginBottom: 20,
+  },
+  tag: {
+    fontSize: 18,
+    color: "#00008B",
+    textAlign: "center",
+    fontWeight: "bold",
+    marginBottom: 5,
   },
   tagline: {
-    fontSize: 16,
-    color: "#fff",
+    fontSize: 26,
+    color: "#00008B",
+
     textAlign: "center",
-    marginHorizontal: 20,
+    marginBottom: 20,
   },
   buttonContainer: {
-    width: "80%",
+    width: "100%",
+    marginTop: 20,
   },
   button: {
-    backgroundColor: "#ff5e62",
-    paddingVertical: 15,
-    borderRadius: 25,
-    marginBottom: 15,
+    width: "100%",
+    padding: 15,
+    borderRadius: 8,
+    backgroundColor: "#FF8C00",
     alignItems: "center",
+    marginBottom: 10,
   },
   buttonText: {
-    color: "#fff",
-    fontSize: 16,
+    fontSize: 18,
+    color: "#FFF",
     fontWeight: "bold",
   },
   secondaryButton: {
-    backgroundColor: "#fff",
-    paddingVertical: 15,
-    borderRadius: 25,
+    width: "100%",
+    padding: 15,
+    borderRadius: 8,
+    backgroundColor: "#87CEEB",
     alignItems: "center",
-    borderWidth: 1,
-    borderColor: "#ff5e62",
   },
   secondaryButtonText: {
-    color: "#ff5e62",
-    fontSize: 16,
+    fontSize: 18,
+    color: "#FFF",
     fontWeight: "bold",
   },
 });
-
-export default styles;
