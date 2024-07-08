@@ -103,6 +103,8 @@ import { useNavigation } from "@react-navigation/native";
 import axios from "axios";
 import styles from "./LoginScreen.Style";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import Footer from "@/app/components/Footer/Footer";
+import ButtonCommon from "@/app/components/ButtonCommon/ButtonCommon";
 
 const LoginScreen = ({ navigation }) => {
   const [values, setValues] = useState({ email: "", password: "" });
@@ -149,7 +151,14 @@ const LoginScreen = ({ navigation }) => {
         values={values}
         onChange={handleChange}
       />
-      <Button title="Giriş Yap" onPress={handleLogin} />
+      {/* <Button title="Giriş Yap" onPress={handleLogin} /> */}
+      <ButtonCommon
+        title="Click Me"
+        onPress={() => alert("Button Pressed!")}
+        style={styles.customButton}
+        textStyle={styles.customButtonText}
+      />
+      <Footer />
     </View>
   );
 };

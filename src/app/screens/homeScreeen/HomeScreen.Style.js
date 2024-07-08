@@ -60,7 +60,7 @@ export default StyleSheet.create({
     width: "100%",
     padding: 15,
     borderRadius: 8,
-    backgroundColor: "#87CEEB",
+    backgroundColor: "#5F9EA0",
     alignItems: "center",
   },
   secondaryButtonText: {

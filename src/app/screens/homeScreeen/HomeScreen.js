@@ -15,6 +15,7 @@ import styles from "./HomeScreen.Style";
 import AuthForm from "@/app/components/AuthInput/AuthInput";
 import axios from "axios";
 import { LinearGradient } from "expo-linear-gradient";
+import ButtonCommon from "@/app/components/ButtonCommon/ButtonCommon";
 
 function HomeScreen({ navigate }) {
   const [values, setValues] = useState({ email: "", password: "" });
@@ -111,18 +112,19 @@ function HomeScreen({ navigate }) {
         <Text style={styles.tagline}>me first</Text>
       </View>
       <View style={styles.buttonContainer}>
-        <TouchableOpacity
-          style={styles.button}
+        <ButtonCommon
+          title="Sign In"
           onPress={() => navigation.navigate("login")}
-        >
-          <Text style={styles.buttonText}>Log In</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.secondaryButton}
+          style={styles.button}
+          textStyle={styles.buttonText}
+        />
+
+        <ButtonCommon
+          title="Sign Up"
           onPress={() => navigation.navigate("register")}
-        >
-          <Text style={styles.secondaryButtonText}>Sign Up</Text>
-        </TouchableOpacity>
+          style={styles.secondaryButton}
+          textStyle={styles.secondaryButtonText}
+        />
       </View>
     </LinearGradient>
   );
