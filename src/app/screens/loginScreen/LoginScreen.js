@@ -29,7 +29,8 @@ const LoginScreen = ({ navigation }) => {
       await AsyncStorage.setItem("accessToken", data.accessToken);
       await AsyncStorage.setItem("refreshToken", data.refreshToken);
       await AsyncStorage.setItem("expiresIn", data.expiresIn.toString());
-      // toastService.showSuccess("Giriş yapıldı! ibrahim");
+      toastService.showSuccess("Giriş yapıldı! ibrahim");
+      navigation.navigate("Home");
     } catch (error) {
       // authService'den gelen hataları yakalama
       //toastService.showError(error.message || "Bir şeyler ters gitti.");
